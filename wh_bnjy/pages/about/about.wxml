@@ -1,0 +1,19 @@
+<!--pages/about/about.wxml-->
+<view class='about-banner'> 
+  <image src='https://www.whbnjy.top/attachment/images/banner/aboutbanner.jpg'></image>
+</view>
+<view class='about-list'>
+  <view class='customer-phone'>
+    <image src='../../image/banner/telephone-icon.png'></image>
+    <text>客服电话 : 150 7129 4522(刘女士)</text>
+  </view>
+  <view class='contact-phone'>
+    <image src='../../image/banner/contact.png'></image>
+    <text>联系电话 : 13886179255</text>
+  </view>
+  <view class='address-us'>
+    <image src='../../image/banner/address-icon.png'></image>
+    <text>公司地址 : 武汉市东西湖区革新大道388-1号</text>
+  </view>
+</view>
+

@@ -1,0 +1,460 @@
+.main {
+    padding: 10rpx 0 0 0;
+}
+
+.flow-img {
+    width: 709rpx;
+    height: 217rpx;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.form-box .title {
+    width: 100%;
+    height: auto;
+    color: #666;
+    margin-bottom: 16rpx;
+}
+
+.form-box .title text {
+    color: #0daf5e;
+    font-size: 50rpx;
+    margin: 0 16rpx;
+}
+
+.form-box .city-area-box {
+    width: 630rpx;
+    height: 94rpx;
+}
+
+.picker-box,.area {
+    width: 306rpx;
+    height: auto;
+    position: relative;
+}
+.area_1{
+  position: absolute;
+  margin-left: 45%;
+  width: 140px;
+  margin-top: -52px;
+}
+.picker-box .triangle {
+    height: 0;
+    width: 0;
+    border: 12rpx solid transparent;
+    border-top: 12rpx solid #282828;
+    position: absolute;
+    right: 40rpx;
+    top: 38rpx;
+}
+
+.area_1 .unit {
+    position: absolute;
+    right: 40rpx;
+    top: 20rpx;
+    font-size: 28rpx;
+    color: #282828;
+    z-index: 10;
+}
+
+.form-box form {
+    display: block;
+    height: auto;
+    padding: 30rpx;
+    width: 630rpx;
+    margin: 30rpx auto 56rpx auto;
+    border-radius: 24rpx;
+    background: #fff;
+    box-shadow: 2rpx 2rpx 20rpx #ccc;
+}
+
+.form-box .form-titimg {
+    width: 630rpx;
+    height: 80rpx;
+    background: url(http://s1.17house.com/newweb/m/newSem/1123/images/numgif.gif) no-repeat;
+    background-size: 100%;
+}
+
+.form-box .whatMoneys {
+    width: 620rpx;
+    height: auto;
+    border: 2rpx solid #dcdcdc;
+    border-top: none;
+    margin: 0 auto 30rpx;
+    padding: 10rpx 0;
+}
+
+.form-box .whatMoneys .item {
+    width: 282rpx;
+    height: auto;
+    padding: 4rpx 0;
+}
+
+.form-box .whatMoneys .item text {
+    color: #333;
+    font-weight: bold;
+}
+
+.form-box .whatMoneys .item:first-child {
+    text-align: right;
+    padding-right: 26rpx;
+}
+
+.form-box .whatMoneys .item:nth-child(3n) {
+    text-align: right;
+    padding-right: 26rpx;
+}
+
+.form-box .whatMoneys .item:nth-child(2n) {
+    text-align: left;
+    padding-left: 26rpx;
+}
+
+.inp {
+    height: 80rpx;
+    background: #f1f1f1;
+    margin: 0 auto 30rpx auto;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #97a2a8;
+    padding-left: 30rpx;
+}
+.inp1 {
+    height: 80rpx;
+    background: #f1f1f1;
+    margin: 0 auto 30rpx auto;
+    border-radius: 12rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #97a2a8;
+    padding-left: 30rpx;
+    position: absolute;
+}
+
+.form-box .form-btn {
+    height: 90rpx;
+    background: #0daf5e;
+    line-height: 90rpx;
+    font-size: 34rpx;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 0;
+    border-radius: 8rpx;
+}
+
+.form-box .form-btn {
+    animation: btn_move ease-in-out 0.4s infinite;
+}
+
+@-webkit-keyframes btn_move {
+    0% {
+        transform: scale(.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+}
+
+@keyframes btn_move {
+    0% {
+        transform: scale(.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+}
+
+.picker .picker-inp {
+    width: 100%;
+    color: #282828;
+    height: 80rpx;
+    line-height: 80rpx;
+    /* padding: 15rpx 0; */
+}
+
+.form-box .text {
+    width: 100%;
+    height: auto;
+    color: #333;
+    text-align: center;
+}
+
+.bjDetail {
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.bjDetail .titleImg {
+    width: 220rpx;
+    height: 36rpx;
+    margin: 0 auto 60rpx;
+    display: block;
+}
+
+.bjDetail .moneyDetail {
+    width: 624rpx;
+    height: auto;
+    background: #fff7f4;
+    border: 2rpx solid #ffcdba;
+    border-radius: 10rpx;
+    padding: 40rpx 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.bjDetail .moneyDetail .title {
+    width: 100%;
+    height: auto;
+    color: #444;
+    margin: 0 0 30rpx 0;
+}
+
+.bjDetail .moneyDetail .box {
+    width: 100%;
+    height: 230rpx;
+}
+
+.bjDetail .moneyDetail .box .box-left {
+    width: 220rpx;
+    height: auto;
+    padding: 50rpx 0;
+    position: relative;
+}
+
+.bjDetail .moneyDetail .box .box-left .money {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #ff7623;
+}
+
+.bjDetail .moneyDetail .box .box-left .money text {
+    font-size: 64rpx;
+    font-weight: bold;
+}
+
+.bjDetail .moneyDetail .box .box-left .word {
+    width: 100%;
+    height: auto;
+    color: #333;
+    text-align: center;
+}
+
+.bjDetail .moneyDetail .box .box-right {
+    width: 320rpx;
+    height: 170rpx;
+    background: #fff0ea;
+    padding: 30rpx;
+}
+
+.bjDetail .moneyDetail .box .box-right .item {
+    width: 130rpx;
+    height: auto;
+    margin-bottom: 14rpx;
+}
+
+.bjDetail .moneyDetail .box .box-right .item .im {
+    width: 100%;
+    height: auto;
+    color: #ff7623;
+    text-align: center;
+}
+
+.bjDetail .moneyDetail .box .box-right .item .in {
+    width: 100%;
+    height: auto;
+    color: #444;
+    text-align: center;
+}
+
+.bjDetail .moneyDetail .box .box-right .item:nth-child(2n) {
+    margin-left: 50rpx;
+}
+
+.bjDetail .moneyPercent {
+    width: 624rpx;
+    height: auto;
+    background: #fff;
+    border: 2rpx solid #ebedf8;
+    border-radius: 10rpx;
+    padding: 40rpx 30rpx;
+    margin-bottom: 90rpx;
+}
+
+.bjDetail .moneyPercent .title {
+    width: 100%;
+    height: auto;
+    color: #444;
+    margin: 0 0 30rpx 0;
+}
+
+.bjDetail .moneyPercent .percentImg {
+    width: 558rpx;
+    height: 572rpx;
+}
+
+.bjDetail .dataList {
+    width: 690rpx;
+    height: auto;
+    border-radius: 20rpx;
+    background: #fff;
+    box-shadow: 5rpx 0 15rpx rgba(0,0,0,0.15);
+    margin: 0 auto 30rpx;
+}
+
+.bjDetail .dataList .item {
+    width: 550rpx;
+    height: auto;
+    border-bottom: 2rpx solid #eee;
+    margin: 0 auto;
+}
+
+.bjDetail .dataList .item .imgBox {
+    width: 220rpx;
+    height: auto;
+}
+
+.bjDetail .dataList .item1 .imgBox image {
+    width: 170rpx;
+    height: 152rpx;
+    margin-top: 50rpx;
+}
+
+.bjDetail .dataList .item2 .imgBox image {
+    width: 184rpx;
+    height: 166rpx;
+    margin-top: 54rpx;
+}
+
+.bjDetail .dataList .item3 .imgBox image {
+    width: 176rpx;
+    height: 116rpx;
+    margin-top: 54rpx;
+}
+
+.bjDetail .dataList .item4 .imgBox image {
+    width: 160rpx;
+    height: 138rpx;
+    margin-top: 56rpx;
+}
+
+.bjDetail .dataList .item1 .text {
+    width: auto;
+    height: auto;
+    line-height: 254rpx;
+    color: #333;
+}
+
+.bjDetail .dataList .item2 .text {
+    width: auto;
+    height: auto;
+    line-height: 270rpx;
+    color: #333;
+}
+
+.bjDetail .dataList .item3 .text {
+    width: auto;
+    height: auto;
+    line-height: 228rpx;
+    color: #333;
+}
+
+.bjDetail .dataList .item4 .text {
+    width: auto;
+    height: auto;
+    line-height: 246rpx;
+    color: #333;
+}
+
+.bjDetail .dataList .item:last-child {
+    border: none;
+}
+
+.copy-right {
+    width: 100%;
+    height: auto;
+    padding-bottom: 150rpx;
+}
+
+.copy-right text {
+    display: block;
+    color: #999;
+    text-align: center;
+    margin-bottom: 4rpx;
+}
+
+.main .btnBox {
+    width: 100%;
+    height: 130rpx;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.main .btnBox .groupBtn {
+    width: 690rpx;
+    height: 90rpx;
+    margin: 20rpx auto 0;
+    line-height: 90rpx;
+    background: #0daf5e;
+    text-align: center;
+    border-radius: 12rpx;
+    color: #fff;
+    border: none;
+}
+
+.accreditBtn {
+    width: 100%;
+    height: 90rpx;
+    position: absolute;
+    bottom: 220rpx;
+    left: 0;
+    border: none!important;
+    z-index: 10;
+    padding: 0;
+}
+
+.gif {
+    position: absolute;
+    bottom: 240rpx;
+    left: 90rpx;
+    z-index: 15;
+    display: block;
+    width: 2rpx;
+    height: 35rpx;
+}
+
+.accreditBtn::after {
+    border: none!important;
+}
+
+.show {
+    display: block!important;
+}
+
+.hide {
+    display: none!important;
+}
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}

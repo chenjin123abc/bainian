@@ -1,0 +1,136 @@
+/* page/mai/mai.wxss */
+@import "../../base/iconfont.wxss";
+page{
+  background-color:#F0F0F0;
+}
+.img{
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.zhifu{
+  position: absolute;
+  left: 40px;
+  line-height: 50px;
+  color: white
+}
+.xiangxi{
+  margin-top: 20px;
+  height: 285px;
+  background: white;
+  position: relative
+}
+.good{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 30px;
+  padding-top: 10px;
+}
+.name{
+  position: absolute;
+  left: 130px;
+  top: 15px;
+  font-size: 18px;
+  color: gray;
+}
+.danjia{
+  position: absolute;
+  left: 130px;
+  top: 50px;
+  font-size: 20px;
+  color: red;
+}
+.shuliang{
+  position: absolute;
+  left: 230px;
+  top: 50px;
+  font-size: 12px;
+  color: red;
+}
+.flex-grow-1 {
+    min-width: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+.flex-y-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+.flex-x-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.buy-now {
+    background: #ff4544;
+    color: #fff;
+    width: 20px;
+    height: 50px;
+    
+}
+.gou{
+  position:fixed;
+  bottom:0;
+  width: 750rpx;
+}
+.zongjia{
+  background: white;
+  color: red; 
+}
+.flex-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+}
+.zhong{
+  height: 50px;
+  width: 100%;
+  background: white;
+  line-height: 50px;
+  position: relative
+}
+.guige{
+  color:white;
+  width:80px;
+  border-radius: 15px;
+  position: absolute;
+  background: #ff4544;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 10px;
+  left: 110px
+}
+.que{
+  color:#e0d9d9;
+  width:80px;
+  border-radius: 15px;
+  position: absolute;
+  border: 1px #e0d9d9 solid;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  left: 550rpx;
+  margin-top: 20rpx
+}
+.yuyuefont{
+  color:#524f4f ;
+  font-size: 12px;
+  font-family:'Times New Roman', Times, serif
+}

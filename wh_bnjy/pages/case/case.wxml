@@ -1,0 +1,31 @@
+<view class="content">
+    <swiper class="swiper" indicatorActiveColor="#fff" indicatorColor="#fff" indicatorDots="true">
+        <swiper-item wx:for="{{Carousel}}" wx:key="id">
+            <image class="slide-image" src="{{item.src}}"></image>
+        </swiper-item>
+    </swiper>
+    <scroll-view class="category" scrollX="true">
+        <view bindtap="changeCate" class="cateItem {{currentCategory=='全部'?'active':''}}" data-cate="全部" data-typeid="0">全部</view>
+        <view bindtap="changeCate" class="cateItem {{currentCategory==item.type_name?'active':''}}" data-cate="{{item.type_name}}" data-typeid="{{item.id}}" wx:for="{{category}}" wx:key="id">
+      {{item.type_name}}
+    </view>
+    </scroll-view>
+    <view class="p20 mt20">
+        <input bindconfirm="selectProduct" class="Keyword" placeholder="请输入关键词进行搜索" placeholderClass="f30 letter3" type="text" value="{{Keyword}}"></input>
+    </view>
+    <view class="container">
+        <view class="ListItem" wx:for="{{currentList}}">
+            <view bindtap="intoProductDetail" class="listBg" data-pid="{{item.id}}">
+                <image src="{{item.cover}}"></image>
+            </view>
+            <view class="mt20 title">{{item.title}}</view>
+        </view>
+    </view>
+</view>
+<view wx:if="{{is_tabbar}}">
+    <tabber SystemInfo="{{SystemInfo}}" page="kundian_miniapps/pages/proShow/index/index" tabber="{{tabBar}}"></tabber>
+</view>
+<view style="margin-top:30px;text-align: center;width:100%">
+  
+  <text style="font-size:8px">技术支持：武汉亿课</text>
+</view>

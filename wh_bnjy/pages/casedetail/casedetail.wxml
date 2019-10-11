@@ -1,0 +1,27 @@
+<import src="../../../wxParse/wxParse.wxml"></import>
+<swiper class="swiper" indicatorActiveColor="#fff" indicatorColor="#fff" indicatorDots="true">
+  <swiper-item wx:for="{{Carousel}}" wx:key="id">
+    <image class="slide-image" src="{{item.src}}"></image>
+  </swiper-item>
+</swiper>
+<view style="margin-top:10px">
+  <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+  </view>
+</view>
+<!-- 需要对这个分类进行隔开 -->
+<view style="font-weight:800;color:red;text-align: center">--更多--</view>
+<view class="container">
+  <view class="ListItem" wx:for="{{productDetail}}">
+    <view bindtap="intoProductDetail" class="listBg" data-pid="{{item.id}}">
+      <image src="{{item.cover}}"></image>
+    </view>
+    <view class="mt20 title">{{item.title}}</view>
+  </view>
+</view>
+
+<!-- 关于我们 -->
+<view style="margin-top:30px;text-align: center;">
+ 
+  <text style="font-size:8px">技术支持：武汉亿课</text>
+</view>

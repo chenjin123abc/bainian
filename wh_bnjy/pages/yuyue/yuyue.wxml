@@ -1,0 +1,27 @@
+<!--page/mai/mai.wxml-->
+<view>
+  <image class='img' src='../../image/tubiao/dingdan.jpg'></image>
+  <text class='zhifu'>我的预约</text>
+</view>
+<view class='xiangxi '>
+  <image class='good' src='../../image/tubiao/yuyue.jpg'></image>
+  <view class='name'>{{name}}</view>
+  <view class='danjia'><text style="font-size:10">金额：</text>￥{{price}}</view>
+  
+  <view class="yuyuefont" style="padding-top:120px;border-bottom: 1px solid #eee;padding-left:10px">
+  预约时间：{{cteatetime}}</view>
+  <view class="yuyuefont" style="padding-top:12px;border-bottom: 1px solid #eee;padding-left:10px">
+  订单编号：{{orderid}}</view>
+  <view class="yuyuefont" style="padding-top:12px;border-bottom: 1px solid #eee;padding-left:10px">
+  预约金额：{{price}}</view>
+  <view class="yuyuefont" style="padding-top:12px;border-bottom: 1px solid #eee;padding-left:10px">
+  预约项目：{{zxkind}}</view>
+   <view class='que' bindtap="tuikuan" data-oder="{{orderid}}" data-fee="{{price}}">退款</view> 
+</view>
+
+
+
+
+
+
+

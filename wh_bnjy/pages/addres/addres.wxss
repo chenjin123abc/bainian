@@ -1,0 +1,144 @@
+page{
+  background-color: gainsboro;
+}
+.title{
+  margin: 30px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  color: white;
+  background-color: rgb(97, 65, 173);
+  line-height: 40px;
+  border-radius: 10px;
+}
+.img{
+  width: 100px;
+  height: 100px;
+  float: left;
+  clear: both
+}
+
+.imgs{
+ width: 300rpx;
+  height: 380rpx;
+  /* background: white; */
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+.price{
+  color: red;
+  font-size: 25rpx;
+}
+.name{
+  margin-top:5px;
+  padding-left: 40px
+}
+.sale{
+  padding-left: 140rpx;
+  color: gray;
+  font-size: 20rpx
+}
+.pintuan{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+.yanyu{
+width: 300rpx;
+height: 60rpx;
+font-size: 10px;
+color: whitesmoke;
+font-size-adjust:inherit;
+font-family:'Times New Roman', Times, serif;
+background-color: rgb(238, 30, 134);
+border-radius: 5px;
+margin-bottom: 10px;
+
+}
+.biankuang{
+  padding: 10rpx;
+  width: 300rpx;
+  height: 380rpx;
+  background-color: white
+}
+.aboutus{
+  margin: 30px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  background-color: pink;
+  border-radius: 10px;
+  line-height: 40px
+}
+.shuoming{
+  background: white;
+}
+.none{
+   opacity: 0;
+}
+.map_text {
+  /*padding: 10px 20px;*/
+  font-size: 16px;
+  background: #f3eff1;
+}
+.map_center{
+  display: flex;
+  flex-direction: column;
+}
+
+.map_address {
+  padding: 10px 20px;
+  margin-top: 5px;
+  background: white; 
+  /* height: 40px; */
+  letter-spacing: 1px;
+}
+.shoper_name {
+  padding: 10px 20px;
+  margin-top: 5px;
+  /*background: white;*/
+  /* height: 20px; */
+  /* line-height: 20px; */
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+}
+.contact_me{
+  margin-top: 5px;
+  padding: 10px 20px;
+  background: white;
+  height: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.shoper_intor {
+  margin-top: 5px;
+  padding: 10px 20px;
+  background: white;
+  letter-spacing: 1px;
+  font-size:32rpx;
+  line-height: 40rpx;
+}
+
+.company_detail{
+   margin-top: 5px;
+  padding: 10px 20px;
+  background: white;
+  letter-spacing: 3px;
+}
+.go_there{
+  background: white; 
+  height: 20px;
+  padding: 5px 20px 10px;
+  margin-top: 5px;
+  line-height: 20px;
+}
+.go_there>image{
+  width: 20px;
+  height: 20px;
+
+}

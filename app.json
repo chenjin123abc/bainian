@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "wh_bnjy/pages/index/index",
+    "wh_bnjy/pages/concate/concate",
+    "wh_bnjy/pages/my/my",
+    "wh_bnjy/pages/pay/pay",
+    "wh_bnjy/pages/about/about",
+    "wh_bnjy/pages/baojia/baojia",
+    "wh_bnjy/pages/case/case",
+    "wh_bnjy/pages/casedetail/casedetail",
+    "wh_bnjy/pages/addres/addres",
+    "wh_bnjy/pages/yuyue/yuyue"
+
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "百年基业",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#f5f5f5",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "wh_bnjy/pages/index/index",
+        "text": "项目展示",
+        "iconPath":"wh_bnjy/image/tabar/home.png",
+        "selectedIconPath":"wh_bnjy/image/tabar/homeselect.png"
+      },
+      {
+        "pagePath": "wh_bnjy/pages/concate/concate",
+        "text": "在线预约",
+        "iconPath": "wh_bnjy/image/tabar/concate.png",
+        "selectedIconPath": "wh_bnjy/image/tabar/concateselect.png"
+      },
+      {
+        "pagePath": "wh_bnjy/pages/my/my",
+        "text": "我",
+        "iconPath": "wh_bnjy/image/tabar/my.png",
+        "selectedIconPath": "wh_bnjy/image/tabar/myselect.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

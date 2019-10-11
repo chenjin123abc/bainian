@@ -1,0 +1,32 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view style='margin-top: 20px;'></view>
+<view class='title'>~~武汉百年基业~~</view>
+<view style='margin-top: 30px;'></view>
+<view class='shuoming'>
+  <image class='img' mode='scaleToFill' src='https://www.whbnjy.top/attachment/images/banner/logo.jpg'></image>
+  <text style='font-size:12px; text-indent:35px' decode='{{decode}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;武汉百年基业装饰材料工程有限公司是一家互联网+实体店相结合的房屋维修、装修、装饰材料销售的综合性服务公司。成立于2019年7月2日，前身一直致力于线下实体店技能服务操作，拥用一批多技能的优秀人才。为近万个家庭解决、排除房屋烦恼问题，力争让每个家庭不再因房屋问题再烦恼。
+
+ &nbsp;&nbsp;&nbsp;&nbsp;百年基业装饰材料工程有限公司坚持走自主创新之路，凭借一批优秀的技术团队不断创新，通过线上管理软件、接单软件、公众号、小程序，利用大数据应用和云计算技术及线下实体店统一管理，匹配就近师傅，快速上门服务，对服务师傅实时追踪进程，满足用户需求。
+ &nbsp;&nbsp;&nbsp;&nbsp;未来，武汉百年基业装饰材料工程有限公司不断探索，通过新技术和新模式，打造完整的技能共享快速一站式服务，让所有家庭因房屋问题线上快速排除。</text>
+</view>
+<view style='margin-top: 20px;'></view>
+<map id="map" longitude="114.127169" latitude="30.61868" scale="14" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+
+<view class="map_text">
+  <view class="map_title">
+    <view class="map_center">
+      <view class="shoper_name">
+      </view>
+     <view class="go_there" size="13rpx" bindtap="bindgothere">
+        到这里去:
+        <image style="position: absolute;padding-top:0.5px" src="../../image/tubiao/daohang.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view style='position: relative'></view>
+<view style="margin-top:50px;text-align: center;width:100%">
+
+  <text style="font-size:8px">技术支持：武汉亿课</text>
+</view>

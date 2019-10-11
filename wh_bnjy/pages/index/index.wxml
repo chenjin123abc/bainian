@@ -1,0 +1,111 @@
+<view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" duration="1000" interval="2000" >
+    <block wx:for-items="{{list}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.img}}" mode="widthFix" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="type_cont">
+  <view class="type_flex">
+    <view class="type_for" wx:for="{{type}}" bindtap="bindType" data-id="{{item.id}}">
+      <image src="{{item.img}}"></image>
+      <view class="type_cont_text">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='swiper-scroll-wrap'>
+  <view class='swiper-wrap'>
+    <image src='../../image/tubiao/bugle-icon.png'></image>
+    <text class='discount-info'>优惠资讯 : </text>
+    <swiper circular='true' autoplay="true" interval="3000" duration="500" class='store-swiper' vertical='true'>
+      <block wx:for="{{information}}" wx:key='index'>
+        <swiper-item>
+          <text>{{item.textUrl}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+
+
+<view class="recommond_nav">-{{zhuangxiutitle}}-</view>
+<view class="recommond_cont">
+  <view class="recommond_flex">
+    <view class="recommond_for" wx:for-items="{{galler}}" data-id="{{item.id}}" bindtap="bindgaller">
+      <image src="{{item.img}}"></image>
+      <view class="recommond_name">
+        <view class="recommond_left">
+          <text>{{item.name}}</text>
+        </view>
+        <view class="recommond_right">
+          <image src="../../image/tubiao/xin.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="recommond_nav">-{{weixiutitle}}-</view>
+<view class="recommond_cont">
+  <view class="recommond_flex">
+    <view class="recommond_for" wx:for-items="{{weixiu}}" data-id="{{item.id}}" bindtap="bindgaller">
+      <image src="{{item.img}}"></image>
+      <view class="recommond_name">
+        <view class="recommond_left">
+          <text>{{item.name}}</text>
+        </view>
+        <view class="recommond_right">
+          <image src="../../image/tubiao/xin.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view style="margin-top:30px;text-align: center;">
+  <text style="font-size:8px">技术支持：武汉亿课</text>
+</view>
+
+
+<!-- 自定义头像授权弹框 -->
+<view class='getUserInfo' style='display:{{onOff}}'>
+  <view class='getUserInfo_max'>
+
+    <view class='getUserInfo_text'>
+      <image mode="aspectFill" style="width:150rpx;height:150rpx" src='https://www.whwsc.top/attachment/images/img/shouquan2.png'></image>
+    </view>
+    <view class='getUserInfo_title'>
+      <view style="text-align:center">获取微信授权信息</view>
+    </view>
+    <view class='getUserInfo_botton'>
+      <button class="getUserInfo_botton_two" size="mini" type="primary"  open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">点击授权</button>
+      <view></view>
+      <button class="getUserInfo_botton_two" bindtap="hiddenuser" size="mini" type="warn"  lang="zh_CN" >取消授权</button>
+    </view>
+  </view>
+</view>
+
+<!-- 自定义手机号码授权弹框 -->
+<view class='getUserInfo' style='display:{{phoneon}}'>
+  <view class='getUserInfo_max'>
+
+    <view class='getUserInfo_text'>
+      <image mode="aspectFill" style="width:150rpx;height:150rpx" src='https://www.whwsc.top/attachment/images/img/shouquan2.png'></image>
+    </view>
+    <view class='getUserInfo_title'>
+      <view style="text-align:center">获取手机授权信息</view>
+    </view>
+    <view class='getUserInfo_botton'>
+      <button class='getUserInfo_botton_two' size="mini" type="primary" open-type="getPhoneNumber" lang="zh_CN" bindgetphonenumber="getUserPhone">点击授权</button>
+      <view></view>
+      <button class='getUserInfo_botton_two' bindtap="hiddenphone" size="mini" type="warn" lang="zh_CN" >取消授权</button>
+      
+    </view>
+  </view>
+</view>

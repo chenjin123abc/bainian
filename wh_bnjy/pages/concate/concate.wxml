@@ -1,0 +1,90 @@
+<view class="main">
+  <scroll-view scrollY bindscroll="onPageScroll">
+    <image class="flow-img" lazyLoad="true" src="../../image/tubiao/banner.jpg"></image>
+    <view class="form-box">
+      <form bindsubmit="onFormSubmit" reportSubmit="true">
+        <view class="title f26">今天已有
+          <text>{{renshu}}</text>人成功在线预约</view>
+        <!-- <view class="form-titimg"></view> -->
+        <view class="whatMoneys clearfix">
+          <!-- <view class="item" style='margin-left:120px;padding-top:10px'>
+            <text>设计费：</text>?元</view>
+          <view class="item" style='margin-left:20px;margin-top:-28px'>
+            <text>质检费：</text>?元</view>
+          <view class="item" style='margin-left:120px;padding-top:10px'>
+            <text>材料费：</text>?元</view>
+          <view class="item" style='margin-left:20px;margin-top:-28px'>
+            <text>人工费：</text>?元</view> -->
+        </view>
+        <view class="city-area-box clearfix">
+          <view class="picker-box l">
+            <view class="triangle"></view>
+            <picker mode="region" class="inp" bindchange="onPickChange" range='{{cityarr}}'>
+              <input name="city" class='inp' disabled='true' type='text' value='{{defaultcity}}'></input>
+            </picker>
+          </view>
+          <view class="area_1">
+            <!-- <view class="unit">㎡</view> -->
+            <input bindfocus="areaFocus" bindinput="listenerareaInput" class="inp" cursorSpacing="80" data-flag="{{areaFocusFlag}}" maxlength="30" name="area" placeholder="{{areaFocusFlag?'':'具体地址'}}" type="text" value="{{areaFocusFlag?'90':''}}"></input>
+          </view>
+        </view>
+        <radio-group class="radio-group"  name="housekind">
+          <view class="city-area-box clearfix">
+            <!-- <view class="">
+              <view class="triangle"></view>
+              <radio class="inp" value="新房子" checked="{{item.checked}}" />新房装修
+            </view>
+            <view class="area_1">
+              <radio class="inp" value="老房子" checked="{{item.checked}}" />旧房改造
+            </view> -->
+            <picker  class="inp" bindchange="onPickChangekind" value="{{index}}" range='{{zxkind}}'>
+              <input name="kind" class='inp' disabled='true' type='text' value='{{defaultzxkind}}'></input>
+            </picker>
+            
+          </view>
+        </radio-group>
+
+
+        
+        <input bindfocus="phoneFocus" bindinput="listenerPhoneInput" class="inp" cursorSpacing="80" focus="{{phoneFocus}}" maxlength="11" name="mobile" placeholder="输入手机号，接收报价明细" type="number" value="{{phone}}"></input>
+        <input  class="inp"  name="name" placeholder="请输入您的姓名" type="text" ></input>
+        <textarea  class="inp" style="height:120rpx;" name="massage" placeholder="请留下您的备注" type="area" ></textarea>
+        <button class="form-btn inp" formType="submit" size="primary" type="primary">点击立即预约</button>
+        <view class="text f24">填写信息获取免费量房服务，定制更精准预算规划。</view>
+      </form>
+    </view>
+    <view class="bjDetail">
+      <image class="titleImg" lazyLoad="true" src="https://s1.17house.com/wx/climg/quote/title1.png"></image>
+      <view class="moneyDetail">
+        <view class="title f32">费用明细</view>
+        <view class="box">
+          <view class="r box-right clearfix">
+            <font style="color:grey">提交计算后，客服人员将在第一时间给您回复哟！</font>
+          </view>
+        </view>
+      </view>
+      <view class="moneyPercent">
+        <view class="title f32">费用占比</view>
+        <image class="percentImg" lazyLoad="true" src="https://s1.17house.com/wx/climg/quote/percent.png"></image>
+      </view>
+      <image class="titleImg" lazyLoad="true" src="https://s1.17house.com/wx/climg/quote/title2.png"></image>
+      <view class="dataList">
+        <view class="item item{{idx+1}} clearfix" wx:for="{{dataFoot}}" wx:for-index="idx" wx:for-item="dataItem" wx:key="{{idx}}">
+          <view class="imgBox">
+            <image lazyLoad="true" src="{{dataItem.img}}"></image>
+          </view>
+          <view class="text f32">{{dataItem.title}}</view>
+        </view>
+      </view>
+      <view class="copy-right">
+        <text class="f24">Copyright © 百年基业版权所有</text>
+        <text class="f24">技术支持：武汉亿课技有限公司</text>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- <view bindtap="goTop" class="btnBox {{!goTopFlag?'show':'hide'}}">
+    <form reportSubmit bindsubmit="hideSubmit">
+      <button class="groupBtn f30" formType="submit" plain="true">免费获取报价</button>
+    </form>
+  </view> -->
+</view>

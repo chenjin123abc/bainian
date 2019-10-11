@@ -1,0 +1,48 @@
+<!-- header -->
+<view class='user-head'>
+  <image src='../../image/tubiao/mine-bg.jpg' class='mine-bg'></image>
+  <view class='user-head-pic-wrap'>
+    <image src='{{userInfo.avatarUrl}}' class='user-head-pic'></image>
+  <text class='user-name'>{{userInfo.nickName}}</text>
+  </view>
+</view>
+<!-- nav -->
+
+<!-- option-list -->
+
+<view class='option-cont'>
+<navigator url='../about/about' hover-class='none'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <icon style="color:green;font-size:30px" class="iconfont icon-pintuan"></icon>
+        <text class='option-name'>联系我们</text>
+      </view>
+      <view class='right-list'>
+        <icon style="font-size:20px" class="iconfont icon-icon_arrow_right"></icon>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='../addres/addres' hover-class='none'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <icon style="color:red;font-size:25px" class="iconfont icon-dizhi"></icon>
+        <text class='option-name'>关于百年基业</text>
+      </view>
+      <view class='right-list'>
+         <icon style="font-size:20px" class="iconfont icon-icon_arrow_right"></icon>
+      </view>
+    </view> 
+ </navigator>
+ <navigator url='../yuyue/yuyue' hover-class='none'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <icon style="color:red;font-size:25px" class="iconfont icon-yue"></icon>
+        <text class='option-name'>我的预约</text>
+      </view>
+      <view class='right-list'>
+         <icon style="font-size:20px" class="iconfont icon-icon_arrow_right"></icon>
+      </view>
+    </view> 
+ </navigator>
+
+</view>
